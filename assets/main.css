@@ -1,0 +1,130 @@
+@font-face {
+    font-family: FMAbhaya;
+    src: url(FM-Abhaya.TTF);
+}
+
+.tdText {
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    COLOR: #d9f1f9;
+    FONT-FAMILY: "Trebuchet MS", Arial, Verdana
+}
+
+.formText {
+    FONT-SIZE: 9pt;
+    COLOR: black;
+    FONT-FAMILY: Trebuchet MS, Arial, Verdana
+}
+
+.TableText {
+    FONT-SIZE: 8pt;
+    COLOR: #6468a8;
+    FONT-FAMILY: "Trebuchet MS", Arial, Verdana
+}
+
+.annoText {
+    FONT-SIZE: 8pt;
+    COLOR: #009999;
+    FONT-FAMILY: Trebuchet MS, Arial, Verdana
+}
+
+.TableTitle {
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-FAMILY: Trebuchet MS, Arial, Verdana
+}
+
+.textBoxes {
+    FONT-SIZE: 9pt;
+    COLOR: black;
+    FONT-FAMILY: Trebuchet MS, Arial, Verdana
+}
+
+.TableColHeader {
+    FONT-WEIGHT: 700;
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-FAMILY: Trebuchet MS, Arial, Verdana
+}
+
+.tdFieldSubTitle {
+    FONT-SIZE: 8pt;
+    COLOR: #ff9966;
+    FONT-FAMILY: Trebuchet MS, Arial, Verdana
+}
+
+.linkLeft {
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    COLOR: #000000;
+    FONT-STYLE: normal;
+    FONT-FAMILY: "Trebuchet MS", Arial, Verdana;
+    BACKGROUND-COLOR: #9999ff;
+    TEXT-DECORATION: underline
+}
+
+.homeText {
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    COLOR: #68718e;
+    FONT-FAMILY: Trebuchet MS, Arial, Verdana
+}
+
+.english {
+    color: purple;
+}
+
+.sinhala {
+    font-family: Iskoola Pota;
+    color: navy;
+}
+
+.title {
+    font-familiy: Arial;
+    font-weight: bold;
+    color: navy;
+}
+
+.title2 {
+    font-familiy: Arial;
+    font-weight: bold;
+}
+
+.link {
+    font-weight: bold;
+    color: green;
+    border-width: 1px;
+    border-style: solid;
+    border-color: green;
+    cursor: hand;
+}
+
+form.form img {
+    width: 100%;
+}
+
+form.form textarea {
+    font-size: 12pt;
+}
+
+form.form #unicode_textarea {
+    font-family: Potha, Malithi Web, Arial Unicode MS
+}
+
+form.form #fmabaya_textarea {
+    font-family: FMAbhaya;
+}
+
+#scheme {
+    border: green 1px solid;
+    background-color: white;
+}
+
+h4.panel-title {
+    cursor: pointer;
+}
+
+.panel-body div {
+    text-align: center;
+
+}

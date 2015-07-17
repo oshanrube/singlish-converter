@@ -1,0 +1,482 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+<head><title>Real Time Unicode Converter</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="assets/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/main.css"/>
+    <script type="text/javascript" src="assets/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/ZeroClipboard.min.js"></script>
+    <script type="text/javascript" src="assets/sinhala_to_unicode.js"></script>
+    <script type="text/javascript" src="assets/unicode_to_fmabaya.js"></script>
+</head>
+<body>
+<section class="container">
+    <article>
+        <form name="convert_form" class="form">
+        <img src="assets/logo.jpg" alt="Real Time Font Converter"/><br/><br/><span
+                class="TableText">Transliterated ( SinGlish Scheme)</span>
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree" onclick="changeVisibility()"><h4
+                        class="panel-title">Show Transliteration Scheme</h4></div>
+                <div id="panel_body" class="panel-collapse collapse">
+                    <div class="panel-body">
+                    <table border="0" cellpadding="0" cellspacing="0" align="center">
+                    <tr>
+                        <td rowspan="5" style="width:10px;"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td rowspan="5" style="width:10px;"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" style="height:5px;"></td>
+                    </tr>
+                    <tr>
+                    <td style="width: 216px" valign="top" align="center">
+                        <table border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td colspan="9" bgcolor="#EBEBEB"><p align="center"><span class="title">Vowel Sounds</span></p></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"><p align="center"><span class="title2">Short</span></p></td>
+                                <td style="width: 15px;"></td>
+                                <td colspan="5"><p align="center"><span class="title2">Long</span></p></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#EBDDB1" style="width: 45px"><p><span class="sinhala">&#3461;</span></p></td>
+                                <td bgcolor="#EBDDB1" style="width: 30px"><p><span class="english">a</span></p></td>
+                                <td bgcolor="#EBDDB1" style="width: 30px"></td>
+                                <td></td>
+                                <td bgcolor="#E0E2AF" style="width: 45px"><p><span class="sinhala">&#3462;</span></p></td>
+                                <td bgcolor="#E0E2AF" style="width: 30px"><p><span class="english">aa</span></p></td>
+                                <td bgcolor="#E0E2AF" style="width: 30px"><p><span class="english">a)</span></p></td>
+                                <td bgcolor="#E0E2AF" style="width: 30px"></td>
+                                <td width="30" bgcolor="#E0E2AF"></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#F7F0DD"><p><span class="sinhala">&#3463;</span></p></td>
+                                <td bgcolor="#F7F0DD"><p><span class="english">A</span></p></td>
+                                <td bgcolor="#F7F0DD"><p><span class="english">\a</span></p></td>
+                                <td></td>
+                                <td bgcolor="#F0F1DA"><p><span class="sinhala">&#3464;</span></p></td>
+                                <td bgcolor="#F0F1DA"><p><span class="english">Aa</span></p></td>
+                                <td bgcolor="#F0F1DA"><p><span class="english">A)</span></p></td>
+                                <td bgcolor="#F0F1DA"><p><span class="english">ae</span></p></td>
+                                <td bgcolor="#F0F1DA"></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#EBDDB1"><p><span class="sinhala">&#3465;</span></p></td>
+                                <td bgcolor="#EBDDB1"><p><span class="english">i</span></p></td>
+                                <td bgcolor="#EBDDB1"></td>
+                                <td></td>
+                                <td bgcolor="#E0E2AF"><p><span class="sinhala">&#3466;</span></p></td>
+                                <td bgcolor="#E0E2AF"><p><span class="english">ii</span></p></td>
+                                <td bgcolor="#E0E2AF"><p><span class="english">i)</span></p></td>
+                                <td bgcolor="#E0E2AF"><p><span class="english">ie</span></p></td>
+                                <td width="24" bgcolor="#E0E2AF"><p><span class="english">ee</span></p></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#F7F0DD"><p><span class="sinhala">&#3473;</span></p></td>
+                                <td bgcolor="#F7F0DD"><p><span class="english">e</span></p></td>
+                                <td bgcolor="#F7F0DD"></td>
+                                <td></td>
+                                <td bgcolor="#F0F1DA"><p><span class="sinhala">&#3474;</span></p></td>
+                                <td bgcolor="#F0F1DA"><p><span class="english">ea</span></p></td>
+                                <td bgcolor="#F0F1DA"><p><span class="english">e)</span></p></td>
+                                <td bgcolor="#F0F1DA"><p><span class="english">ei</span></p></td>
+                                <td bgcolor="#F0F1DA"></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#EBDDB1"><p><span class="sinhala">&#3476;</span></p></td>
+                                <td bgcolor="#EBDDB1"><p><span class="english">o</span></p></td>
+                                <td bgcolor="#EBDDB1"></td>
+                                <td></td>
+                                <td bgcolor="#E0E2AF"><p><span class="sinhala">&#3477;</span></p></td>
+                                <td bgcolor="#E0E2AF"><p><span class="english">oe</span></p></td>
+                                <td bgcolor="#E0E2AF"><p><span class="english">o)</span></p></td>
+                                <td bgcolor="#E0E2AF"></td>
+                                <td bgcolor="#E0E2AF"></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#F7F0DD"><p><span class="sinhala">&#3467;</span></p></td>
+                                <td bgcolor="#F7F0DD"><p><span class="english">u</span></p></td>
+                                <td bgcolor="#F7F0DD"></td>
+                                <td></td>
+                                <td bgcolor="#F0F1DA"><p><span class="sinhala">&#3468;</span></p></td>
+                                <td bgcolor="#F0F1DA"><p><span class="english">uu</span></p></td>
+                                <td bgcolor="#F0F1DA"><p><span class="english">u)</span></p></td>
+                                <td bgcolor="#F0F1DA"><p><span class="english">oo</span></p></td>
+                                <td bgcolor="#F0F1DA"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td bgcolor="#E0E2AF"><p><span class="sinhala">&#3478;</span></p></td>
+                                <td bgcolor="#E0E2AF"><p><span class="english">au</span></p></td>
+                                <td bgcolor="#E0E2AF"></td>
+                                <td bgcolor="#E0E2AF"></td>
+                                <td bgcolor="#E0E2AF"></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="width: 20px"></td>
+                    <td style="width: 248px" valign="top" align="center">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td colspan="4" bgcolor="#EBEBEB"><p align="center"><span class="title">Auxiliaries</span></p></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"><p align="center"><span class="title2">Special Auxiliaries</span></p></td>
+                            </tr>
+                            <tr bgcolor="#E8F4D0">
+                                <td style="width: 40px"><p><span class="sinhala">&#3515;&#3530;</span></p></td>
+                                <td style="width: 40px"><p><span
+                                        style='font-family: "Iskoola Pota"'>&#3512;&#3515;&#3530;&#8205;</span></p></td>
+                                <td style="width: 70px"><p><span class="english">\r</span><i>&lt;letter&gt;</i></p></td>
+                                <td style="width: 70px"><p><span class="english">R</span><i>&lt;letter&gt;</i></p></td>
+                            </tr>
+                            <tr bgcolor="#F5FBEC">
+                                <td><p><span class="sinhala">&#3530;&#8205;&#3514;</span></p></td>
+                                <td><p><span style='font-family: "Iskoola Pota"'>&#3504;&#3530;&#8205;&#3514;</span>&#8205;</p></td>
+                                <td><p><i>&lt;letter&gt;</i><span class="english">Y</span></p></td>
+                                <td><p><i>&lt;letter&gt;</i><span class="english">\y</span></p></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"><p align="center"><span class="title2">Vowel Sound Auxiliaries</span></p></td>
+                            </tr>
+                            <tr bgcolor="#E8F4D0">
+                                <td><p><span class="sinhala">&#3544;</span></p></td>
+                                <td><p><span style='font-family: "Iskoola Pota"'>&#3482;&#3544;</span></p></td>
+                                <td><p><i>&lt;letter&gt;</i><span class="english">ru</span></p></td>
+                                <td></td>
+                            </tr>
+                            <tr bgcolor="#F5FBEC">
+                                <td><p><span class="sinhala">&#3551;</span></p></td>
+                                <td><p><span style='font-family: "Iskoola Pota"'>&#3488;&#3550;</span></p></td>
+                                <td><p><i>&lt;letter&gt;</i><span class="english">au</span></p></td>
+                                <td></td>
+                            </tr>
+                            <tr bgcolor="#E8F4D0">
+                                <td><p><span class="sinhala">ෛ</span></p></td>
+                                <td><p><span style='font-family: "Iskoola Pota"'>&#3512;&#3547;</span></p></td>
+                                <td><p><i>&lt;letter&gt;</i><span class="english">I</span></p></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"><p align="center"><span class="title2">Nasal Sound Auxiliaries</span></p></td>
+                            </tr>
+                            <tr bgcolor="#F5FBEC">
+                                <td><p><span class="sinhala">&#3500;</span></p></td>
+                                <td><p><span style='font-family: "Iskoola Pota"'>&#3524;&#3500;</span></p></td>
+                                <td><p><span class="english"><b>nn</b>da</span></p></td>
+                                <td></td>
+                            </tr>
+                            <tr bgcolor="#E8F4D0">
+                                <td><p><span class="sinhala">&#3507;</span></p></td>
+                                <td><p><span style='font-family: "Iskoola Pota"'>&#3524;&#3507;</span></p></td>
+                                <td><p><span class="english"><b>nn</b>dha</span></p></td>
+                                <td></td>
+                            </tr>
+                            <tr bgcolor="#F5FBEC">
+                                <td><p><span class="sinhala">&#3487;</span></p></td>
+                                <td><p><span style='font-family: "Iskoola Pota"'>&#3484;&#3487;</span></p></td>
+                                <td><p><span class="english"><b>nn</b>ga</span></p></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="width: 20px"></td>
+                    <td style="width: 370px" valign="top" align="center">
+                        <table border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td colspan="15" bgcolor="#EBEBEB"><p align="center"><span class="title">Consonants</span></p></td>
+                            </tr>
+                            <tr>
+                                <td colspan="6"><p align="center"><span class="title2">Common</span></p></td>
+                                <td colspan="3"><p align="center"><span class="title2">Aspirated</span></p></td>
+                                <td></td>
+                                <td colspan="2"><p align="center"><span class="title2">Special</span></p></td>
+                                <td></td>
+                                <td colspan="2"><p align="center"><span class="title2">Standalone</span></p></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#E8F4D0" style="width:35px"><p><span class="sinhala">&#3482;</span></p></td>
+                                <td bgcolor="#E8F4D0" style="width:40px"><p><span class="english">k</span></p></td>
+                                <td bgcolor="#E8F4D0" style="width:35px"><p><span class="sinhala">&#3510;</span></p></td>
+                                <td bgcolor="#E8F4D0" style="width:45px"><p><span class="english">b</span></p></td>
+                                <td bgcolor="#E8F4D0" style="width:45px"></td>
+                                <td style="width:20px"></td>
+                                <td bgcolor="#DBFB9F" style="width:35px"><p><span class="sinhala">&#3483;</span></p></td>
+                                <td bgcolor="#DBFB9F" style="width:45px"><p><span class="english">kh</span></p></td>
+                                <td bgcolor="#DBFB9F" style="width:45px"><p><span class="english">K</span></p></td>
+                                <td style="width:20px"></td>
+                                <td bgcolor="#E0E2AF" style="width:30px"><p><span class="sinhala">&#3513;</span></p></td>
+                                <td bgcolor="#E0E2AF" style="width:45px"><p><span class="english">B</span></p></td>
+                                <td style="width:20px"></td>
+                                <td bgcolor="#EBDDB1" style="width:30px"><p><span class="sinhala">&#3458;</span></p></td>
+                                <td bgcolor="#EBDDB1" style="width:45px"><p><span class="english">\n</span></p></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#F5FBEC"><p><span class="sinhala">&#3484;</span></p></td>
+                                <td bgcolor="#F5FBEC"><p><span class="english">g</span></p></td>
+                                <td bgcolor="#F5FBEC"><p><span class="sinhala">&#3512;</span></p></td>
+                                <td bgcolor="#F5FBEC"><p><span class="english">m</span></p></td>
+                                <td bgcolor="#F5FBEC">&nbsp;</td>
+                                <td></td>
+                                <td bgcolor="#F4FEE2"><p><span class="sinhala">&#3485;</span></p></td>
+                                <td bgcolor="#F4FEE2"><p><span class="english">gh</span></p></td>
+                                <td bgcolor="#F4FEE2"><p><span class="english">G</span></p></td>
+                                <td>&nbsp;</td>
+                                <td bgcolor="#F0F1DA"><p><span class="sinhala">&#3521;</span></p></td>
+                                <td bgcolor="#F0F1DA"><p><span class="english">sh</span></p></td>
+                                <td>&nbsp;</td>
+                                <td bgcolor="#F7F0DD"><p><span class="sinhala">&#3459;</span></p></td>
+                                <td bgcolor="#F7F0DD"><p><span class="english">\h</span></p></td>
+                            </tr>
+                            <tr>
+                                <td height="19" bgcolor="#E8F4D0"><p><span class="sinhala">&#3488;</span></p></td>
+                                <td bgcolor="#E8F4D0"><p><span class="english">ch</span></p></td>
+                                <td bgcolor="#E8F4D0"><p><span class="sinhala">&#3514;</span></p></td>
+                                <td bgcolor="#E8F4D0"><p><span class="english">y</span></p></td>
+                                <td bgcolor="#E8F4D0">&nbsp;</td>
+                                <td></td>
+                                <td bgcolor="#DBFB9F"><p><span class="sinhala">&#3489;</span></p></td>
+                                <td bgcolor="#DBFB9F"><p><span class="english">Ch</span></p></td>
+                                <td bgcolor="#DBFB9F"></td>
+                                <td style="width: 16px">&nbsp;</td>
+                                <td bgcolor="#E0E2AF"><p><span class="sinhala">&#3522;</span></p></td>
+                                <td bgcolor="#E0E2AF"><p><span class="english">Sh</span></p></td>
+                                <td>&nbsp;</td>
+                                <td bgcolor="#EBDDB1"><p><span class="sinhala">&#3500;</span></p></td>
+                                <td bgcolor="#EBDDB1"><p><span class="english">\N</span></p></td>
+                            </tr>
+                            <tr>
+                                <td height="19" bgcolor="#F5FBEC"><p><span class="sinhala">&#3490;</span></p></td>
+                                <td bgcolor="#F5FBEC"><p><span class="english">j</span></p></td>
+                                <td bgcolor="#F5FBEC"><p><span class="sinhala">&#3515;</span></p></td>
+                                <td bgcolor="#F5FBEC"><p><span class="english">r</span></p></td>
+                                <td bgcolor="#F5FBEC" style="width: 17px">&nbsp;</td>
+                                <td></td>
+                                <td bgcolor="#F4FEE2"><p><span class="sinhala">&#3496;</span></p></td>
+                                <td bgcolor="#F4FEE2"></td>
+                                <td bgcolor="#F4FEE2"><p><span class="english">T</span></p></td>
+                                <td></td>
+                                <td bgcolor="#F0F1DA"><p><span class="sinhala">&#3526;</span></p></td>
+                                <td bgcolor="#F0F1DA"><p><span class="english">f</span></p></td>
+                                <td>&nbsp;</td>
+                                <td bgcolor="#F7F0DD"><p><span class="sinhala">&#3469;</span></p></td>
+                                <td bgcolor="#F7F0DD"><p><span class="english">\R</span></p></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#E8F4D0"><p><span class="sinhala">&#3495;</span></p></td>
+                                <td bgcolor="#E8F4D0"><p><span class="english">t</span></p></td>
+                                <td bgcolor="#E8F4D0"><p><span class="sinhala">&#3517;</span></p></td>
+                                <td bgcolor="#E8F4D0"><p><span class="english">l</span></p></td>
+                                <td bgcolor="#E8F4D0">&nbsp;</td>
+                                <td></td>
+                                <td bgcolor="#DBFB9F"><p><span class="sinhala">&#3498;</span></p></td>
+                                <td bgcolor="#DBFB9F"></td>
+                                <td bgcolor="#DBFB9F"><p><span class="english">D</span></p></td>
+                                <td style="width: 16px">&nbsp;</td>
+                                <td bgcolor="#E0E2AF"><p><span class="sinhala">&#3493;</span></p></td>
+                                <td bgcolor="#E0E2AF"><p><span class="english">GN</span></p></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#F5FBEC"><p><span class="sinhala">&#3497;</span></p></td>
+                                <td bgcolor="#F5FBEC"><p><span class="english">d</span></p></td>
+                                <td bgcolor="#F5FBEC"><p><span class="sinhala">&#3520;</span></p></td>
+                                <td bgcolor="#F5FBEC"><p><span class="english">w</span></p></td>
+                                <td bgcolor="#F5FBEC"><span class="english">v</span></td>
+                                <td></td>
+                                <td bgcolor="#F4FEE2"><p><span class="sinhala">&#3502;</span></p></td>
+                                <td bgcolor="#F4FEE2"><p><span class="english">Th</span></p></td>
+                                <td bgcolor="#F4FEE2"></td>
+                                <td>&nbsp;</td>
+                                <td bgcolor="#F0F1DA"><p><span class="sinhala">&#3492;</span></p></td>
+                                <td bgcolor="#F0F1DA"><p><span class="english">KN</span></p></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#E8F4D0"><p><span class="sinhala">&#3501;</span></p></td>
+                                <td bgcolor="#E8F4D0"><p><span class="english">th</span></p></td>
+                                <td bgcolor="#E8F4D0"><p><span class="sinhala">&#3523;</span></p></td>
+                                <td bgcolor="#E8F4D0"><p><span class="english">s</span></p></td>
+                                <td bgcolor="#E8F4D0">&nbsp;</td>
+                                <td></td>
+                                <td bgcolor="#DBFB9F"><p><span class="sinhala">&#3504;</span></p></td>
+                                <td bgcolor="#DBFB9F"><p><span class="english">Dh</span></p></td>
+                                <td bgcolor="#DBFB9F"></td>
+                                <td></td>
+                                <td bgcolor="#E0E2AF"><p><span class="sinhala">&#3491;</span></p></td>
+                                <td bgcolor="#E0E2AF"><p><span class="english">q</span></p></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#F5FBEC"><p><span class="sinhala">&#3503;</span></p></td>
+                                <td bgcolor="#F5FBEC"><p><span class="english">dh</span></p></td>
+                                <td bgcolor="#F5FBEC"><p><span class="sinhala">&#3524;</span></p></td>
+                                <td bgcolor="#F5FBEC"><p><span class="english">h</span></p></td>
+                                <td bgcolor="#F5FBEC"></td>
+                                <td></td>
+                                <td bgcolor="#F4FEE2"><p><span class="sinhala">&#3509;</span></p></td>
+                                <td bgcolor="#F4FEE2"><p><span class="english">ph</span></p></td>
+                                <td bgcolor="#F4FEE2"><p><span class="english">P</span></p></td>
+                                <td></td>
+                                <td bgcolor="#F0F1DA"><p><span class="sinhala">&#3525;&#3540;</span></p></td>
+                                <td bgcolor="#F0F1DA"><p><span class="english">Lu</span></p></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#E8F4D0"><p><span class="sinhala">&#3505;</span></p></td>
+                                <td bgcolor="#E8F4D0"><p><span class="english">n</span></p></td>
+                                <td bgcolor="#E8F4D0"><p><span class="sinhala">&#3499;</span></p></td>
+                                <td bgcolor="#E8F4D0"><p><span class="english">N</span></p></td>
+                                <td bgcolor="#E8F4D0"></td>
+                                <td></td>
+                                <td bgcolor="#DBFB9F"><p><span class="sinhala">&#3511;</span></p></td>
+                                <td bgcolor="#DBFB9F"><p><span class="english">bh</span></p></td>
+                                <td bgcolor="#DBFB9F"></td>
+                                <td></td>
+                                <td bgcolor="#E0E2AF" style="height: 19px"><p><span class="sinhala">&#3525;&#3542;</span></p></td>
+                                <td bgcolor="#E0E2AF"><p><span class="english">Luu</span></p></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#F5FBEC"><p><span class="sinhala">&#3508;</span></p></td>
+                                <td bgcolor="#F5FBEC"><p><span class="english">p</span></p></td>
+                                <td bgcolor="#F5FBEC"><p><span class="sinhala">&#3525;</span></p></td>
+                                <td bgcolor="#F5FBEC"><p><span class="english">L</span></p></td>
+                                <td bgcolor="#F5FBEC"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" style="height:10px;"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td colspan="13" bgcolor="#EBEBEB"><p align="center"><span
+                                            style="color: navy; font-family: Arial"><strong>Deriving Consonants</strong></span></p>
+                                    </td>
+                                </tr>
+                                <tr bgcolor="#FCFFB7">
+                                    <td style="width: 62px;"><p><span class="sinhala">&#3482;&#3530;</span></p></td>
+                                    <td style="width: 62px;"><p><span class="sinhala">&#3482;</span></p></td>
+                                    <td style="width: 62px;"><p><span class="sinhala">&#3482;&#3535;</span></p></td>
+                                    <td style="width: 62px;"><p><span class="sinhala">&#3482;&#3536;</span></p></td>
+                                    <td style="width: 62px;"><p><span class="sinhala">&#3482;&#3537;</span></p></td>
+                                    <td style="width: 62px;"><p><span class="sinhala">&#3482;&#3538;</span></p></td>
+                                    <td style="width: 62px;"><p><span class="sinhala">&#3482;&#3539;</span></p></td>
+                                    <td style="width: 62px;"><p><span class="sinhala">&#3482;&#3540;</span></p></td>
+                                    <td style="width: 62px;"><p><span class="sinhala">&#3482;&#3542;</span></p></td>
+                                    <td style="width: 62px;"><p><span class="sinhala">&#3482;&#3545;</span></p></td>
+                                    <td style="width:62px"><p><span class="sinhala">&#3482;&#3546;</span></p></td>
+                                    <td style="width:62px;"><p><span class="sinhala">&#3482;&#3548;</span></p></td>
+                                    <td style="width: 62px;"><p><span class="sinhala">&#3482;&#3549;</span></p></td>
+                                </tr>
+                                <tr bgcolor="#FEFFDF">
+                                    <td><p><span class="english">k</span></p></td>
+                                    <td><p><span class="english">ka</span></p></td>
+                                    <td><p><span class="english">kaa</span></p></td>
+                                    <td><p><span class="english">kA</span></p></td>
+                                    <td><p><span class="english">kAa</span></p></td>
+                                    <td><p><span class="english">ki</span></p></td>
+                                    <td><p><span class="english">kie</span></p></td>
+                                    <td><p><span class="english">ku</span></p></td>
+                                    <td><p><span class="english">kuu</span></p></td>
+                                    <td><p><span class="english">ke</span></p></td>
+                                    <td><p><span class="english">kei</span></p></td>
+                                    <td><p><span class="english">ko</span></p></td>
+                                    <td><p><span class="english">koe</span></p></td>
+                                </tr>
+                                <tr bgcolor="#FCFFB7">
+                                    <td><p><span class="sinhala">&#3482;&#3550;</span></p></td>
+                                    <td><p><span class="sinhala">&#3482;&#3530;&#8205;&#3515;</span></p></td>
+                                    <td><p><span class="sinhala">&#3482;&#3530;&#8205;&#3515;&#3535;</span></p></td>
+                                    <td><p><span class="sinhala">&#3482;&#3530;&#8205;&#3515;&#3536;</span></p></td>
+                                    <td><p><span class="sinhala">&#3482;&#3530;&#8205;&#3515;&#3537;</span></p></td>
+                                    <td><p><span class="sinhala">&#3482;&#3530;&#8205;&#3515;&#3538;</span></p></td>
+                                    <td><p><span class="sinhala">&#3482;&#3530;&#8205;&#3515;&#3539;</span></p></td>
+                                    <td><p><span class="sinhala">&#3482;&#3544;</span></p></td>
+                                    <td><p><span class="sinhala">&#3482;&#3570;</span></p></td>
+                                    <td><p><span class="sinhala">&#3482;&#3530;&#8205;&#3515;&#3545;</span></p></td>
+                                    <td><p><span class="sinhala">&#3482;&#3530;&#8205;&#3515;&#3546;</span></p></td>
+                                    <td><p><span class="sinhala">&#3482;&#3530;&#8205;&#3515;&#3548;</span></p></td>
+                                    <td><p><span class="sinhala">&#3482;&#3530;&#8205;&#3515;&#3549;</span></p></td>
+                                </tr>
+                                <tr bgcolor="#FEFFDF">
+                                    <td><p><span class="english">kau</span></p></td>
+                                    <td><p><span class="english">kra</span></p></td>
+                                    <td><p><span class="english">kraa</span></p></td>
+                                    <td><p><span class="english">krA</span></p></td>
+                                    <td><p><span class="english">krAa</span></p></td>
+                                    <td><p><span class="english">kri</span></p></td>
+                                    <td><p><span class="english">krie</span></p></td>
+                                    <td><p><span class="english">kru</span></p></td>
+                                    <td><p><span class="english">kruu</span></p></td>
+                                    <td><p><span class="english">kre</span></p></td>
+                                    <td><p><span class="english">krei</span></p></td>
+                                    <td><p><span class="english">kro</span></p></td>
+                                    <td><p><span class="english">kroe</span></p></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" style="height:10px;"></td>
+                    </tr>
+                    </table>
+                    </div>
+                </div>
+            </div>
+            <span class="TableText">Singlish</span><br/>
+            <textarea class="form-control" onkeyup="convert();" onselect="convert();" onclick="convert();"
+                    name="input_textarea"  id="input_textarea"></textarea>
+            <span class="TableText">Unicode (යුනිකෝඩ්)</span><br/>
+            <textarea class="form-control" id="unicode_textarea" name="unicode_textarea" readonly></textarea>
+            <span class="TableText">FMAbhaya (අභය)</span><br/>
+            <textarea class="form-control" id="fmabaya_textarea" name="fmabaya_textarea" readonly></textarea>
+            <hr>
+            <button type="reset" class="btn"/>Reset</button>
+            <button type="button" data-clipboard-target="unicode_textarea" class="btn copy-btn">Copy Unicode</button>
+            <button type="button" data-clipboard-target="fmabaya_textarea" class="btn copy-btn">Copy fmabaya</button>
+        </form>
+    </article>
+</section>
+<section class="container">
+    <hr>
+    built using <a target="_blank" href="http://www.ucsc.cmb.ac.lk/ltrl/services/feconverter/t1.html">realtime unicode converter by UCSC</a> and <a target="_blank" href="http://converter.malinthe.com/">Malinthe unicode to fmabaya</a>
+</section>
+</body>
+</html>
